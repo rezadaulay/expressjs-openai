@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-    apiKey: process.env.OPEN_AI_KEY,
+    apiKey: process.env.OPEN_AI_API_KEY,
 });
 
 export const travelGuideController = async (req, res) => {

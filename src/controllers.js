@@ -22,7 +22,7 @@ export const travelGuideController = async (req, res) => {
           },
           {
             "role": "user",
-            "content": `Destination Preferences: ${req.body.destination_preferences}\nTravel Interests: ${req.body.travel_interests.join(',')}\nrange of budget: USD ${req.body.min_budget}-${req.body.max_budget}\nTravel Dates: ${req.body.travel_dates}\nPeriod: ${req.body.period_in_days} days`}
+            "content": `Destination Preferences: "${req.body.destination_preferences}"\nTravel Interests: "${req.body.travel_interests}"\nrange of budget: USD ${req.body.min_budget}-${req.body.max_budget}\nTravel Dates between: "${req.body.travel_dates}"\nPeriod: ${req.body.period_in_days} days`}
         ],
         temperature: 1,
         max_tokens: 1000,
